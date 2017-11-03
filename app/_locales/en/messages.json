@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "ontoclick",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "Turn your clinical de scription into a proper ontology term with just one click!",
+    "description": "The description of the application"
+  }
+}
