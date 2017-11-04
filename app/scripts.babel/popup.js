@@ -5,6 +5,9 @@ console.log('ontoclick popup');
 chrome.tabs.executeScript( {
     code: 'window.getSelection().toString();'
 }, function(selection) {
+  if(selection === undefined) {
+    return
+  }
   enterState(STATE_SEARCH)
   Array.prototype.map.call(document.getElementsByClassName('keywords'), function(el) {
     el.innerHTML = selection;
