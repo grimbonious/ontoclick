@@ -11,10 +11,10 @@ OntoClick was prototyped at [Health Hack](https://www.healthhack.com.au/) Sydney
 ## Usage
 
 1. Visit a web page in the Chrome browser
-* Select any clinical description text e.g. 'bowed femur'
-* Right click to show browser context menu
-* Left click OntoClick menu item
-* Copy desired result to clipboard
+2. Select any clinical description text e.g. 'bowed femur'
+3. Right click to show browser context menu
+4. Left click OntoClick menu item
+5. Copy desired result to clipboard
 
 ## Alpha Limitations
 
@@ -24,11 +24,34 @@ OntoClick was prototyped at [Health Hack](https://www.healthhack.com.au/) Sydney
 * Does not work with custom context menus e.g. Google Sheets
 * Does not have class detail view
 
-## Installation
+## Build Prerequisites
 
-TODO: Add installation instructions for a release
+* [Yarn](https://yarnpkg.com/en/docs/install)
 
-## Build Setup
+## Install From Source
+
+``` bash
+# install dependencies
+yarn install
+
+# build for production with minification
+npm run build
+
+# To run but not install, use the load-into-chrome script
+./bin/load-into-chrome
+
+# To install, follow these steps:
+# 1. Start chrome
+# 2. Visit chrome://extensions
+# 3. Click 'Load unpacked extension...'
+# 4. Select the ontoclick/dist/ folder
+```
+
+## Install From Release
+
+TODO: Add instructions for installing the extension using a release artefact.
+
+## Development Setup
 
 ``` bash
 # install dependencies
