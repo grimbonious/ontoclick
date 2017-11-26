@@ -34,6 +34,13 @@ OntoClick was prototyped at [Health Hack](https://www.healthhack.com.au/) Sydney
 # install dependencies
 yarn install
 
+# get your BioPortal REST API key from https://bioportal.bioontology.org/account
+open https://bioportal.bioontology.org/account
+
+# add your API key for production builds
+cp api/example.api.json api/prod.api.json
+open api/prod.api.json
+
 # build for production with minification
 npm run build
 
@@ -56,6 +63,17 @@ TODO: Add instructions for installing the extension using a release artefact.
 ``` bash
 # install dependencies
 yarn install
+
+# get your BioPortal REST API key from https://bioportal.bioontology.org/account
+open https://bioportal.bioontology.org/account
+
+# add your API key for development builds
+cp api/example.api.json api/dev.api.json
+open api/dev.api.json
+
+# add your API key for production builds
+cp api/example.api.json api/prod.api.json
+open api/prod.api.json
 
 # serve with hot reload at localhost:8080
 npm run dev
