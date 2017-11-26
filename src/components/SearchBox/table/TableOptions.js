@@ -14,9 +14,9 @@ export default {
     dropdown: false
   },
   requestFunction: (data) => {
-    return Vue.http.get('https://data.bioontology.org/search', {
+    return Vue.http.get(process.env.API_URL, {
         params: {
-          /* apikey: 'TODO - inject from config', */
+          apikey: process.env.API_KEY,
           q: data.q,
           pagesize: 5,
           page: data.page,
